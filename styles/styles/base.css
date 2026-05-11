@@ -11,6 +11,7 @@ body {
     background: #f4f4f4;
     color: #222;
     line-height: 1.6;
+    font-family: 'Supermercado One', sans-serif;
 }
 
 /* HEADER */
@@ -98,6 +99,10 @@ h1 {
 .country img {
     width: 100%;
     border-radius: 10px;
+}
+.country img {
+    max-width: 300px;
+    height: auto;
 }
 
 /* FOOTER */
