@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Profil Personnel</title>
+
+  <style>
+    *{
+      margin:0;
+      padding:0;
+      box-sizing:border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    body{
+      background:#f4f4f4;
+      padding:20px;
+    }
+
+    .container{
+      max-width:1100px;
+      margin:auto;
+    }
+
+    /* HEADER */
+    header{
+      background:#0d1b4c;
+      color:white;
+      padding:20px;
+      border-radius:10px;
+      text-align:center;
+      margin-bottom:20px;
+    }
+
+    nav{
+      margin-top:15px;
+      display:flex;
+      justify-content:space-around;
+      flex-wrap:wrap;
+    }
+
+    nav a{
+      color:white;
+      text-decoration:none;
+      padding:10px 15px;
+      transition:0.3s;
+    }
+
+    nav a:hover{
+      background:white;
+      color:#0d1b4c;
+      border-radius:5px;
+    }
+
+    /* TITRE */
+    .title{
+      text-align:center;
+      margin:25px 0;
+      font-size:40px;
+      color:#222;
+    }
+
+    /* SECTION PRINCIPALE */
+    .main{
+      display:grid;
+      grid-template-columns:2fr 1fr;
+      gap:20px;
+    }
+
+    .card{
+      background:white;
+      border-radius:10px;
+      overflow:hidden;
+      box-shadow:0 3px 10px rgba(0,0,0,0.1);
+    }
+
+    .card-header{
+      background:#2d4fb3;
+      color:white;
+      padding:15px;
+      font-weight:bold;
+      text-align:center;
+    }
+
+    .card-body{
+      padding:20px;
+    }
+
+    .about{
+      display:flex;
+      gap:20px;
+      align-items:flex-start;
+      flex-wrap:wrap;
+    }
+
+    .about img{
+      width:160px;
+      border-radius:10px;
+    }
+
+    .country{
+      margin-top:30px;
+      border-top:1px solid #ddd;
+      padding-top:20px;
+    }
+
+    .country-content{
+      display:flex;
+      gap:20px;
+      align-items:center;
+      flex-wrap:wrap;
+      margin-top:15px;
+    }
+
+    .flag{
+      width:180px;
+      border:1px solid #ccc;
+    }
+
+    .resources ul{
+      padding-left:20px;
+    }
+
+    .resources li{
+      margin:12px 0;
+    }
+
+    .resources a{
+      color:#2d4fb3;
+      text-decoration:none;
+    }
+
+    .resources a:hover{
+      text-decoration:underline;
+    }
+
+    /* FOOTER */
+    footer{
+      background:#2d4fb3;
+      color:white;
+      text-align:center;
+      padding:20px;
+      margin-top:25px;
+      border-radius:10px;
+    }
+
+    /* RESPONSIVE */
+    @media(max-width:768px){
+      .main{
+        grid-template-columns:1fr;
+      }
+
+      .title{
+        font-size:28px;
+      }
+
+      nav{
+        flex-direction:column;
+        gap:10px;
+      }
+    }
+
+  </style>
+</head>
+
+<body>
+
+  <div class="container">
+
+    <!-- HEADER -->
+    <header>
+      <h2>WDD 131: Dynamic Web Fundamentals</h2>
+
+      <nav>
+        <a href="#">LinkedIn</a>
+        <a href="#">I-Learn</a>
+        <a href="#">Scripture</a>
+        <a href="#">Final Project</a>
+      </nav>
+    </header>
+
+    <!-- TITRE -->
+    <h1 class="title">Rubia M. Francesco</h1>
+
+    <!-- CONTENU -->
+    <section class="main">
+
+      <!-- ABOUT -->
+      <div class="card">
+
+        <div class="card-header">
+          About Me
+        </div>
+
+        <div class="card-body">
+
+          <div class="about">
+
+            <div>
+              <p>
+                My name is Rubia and I go by Ruby.
+                I was born in South Africa and live
+                with my family in Madagascar.
+                I am currently working as administrative
+                legal assistant at a law firm.
+              </p>
+
+              <br>
+
+              <p>
+                My children are my world and I love
+                spending time with them.
+                I love to travel and learn new things.
+              </p>
+            </div>
+
+            <!-- PHOTO -->
+            <img src="photo.jpg" alt="Photo profil">
+
+          </div>
+
+          <!-- COUNTRY -->
+          <div class="country">
+
+            <h2>Toloria, Madagascar</h2>
+
+            <div class="country-content">
+
+              <!-- DRAPEAU -->
+              <img
+                class="flag"
+                src="https://upload.wikimedia.org/wikipedia/commons/b/bc/Flag_of_Madagascar.svg"
+                alt="Drapeau Madagascar"
+              >
+
+              <p>
+                Madagascar is the 4th largest island in the world
+                and is located in the Indian Ocean.
+                It is home to 5% of the world's plant and animal species.
+              </p>
+
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+
+      <!-- RESSOURCES -->
+      <div class="card">
+
+        <div class="card-header">
+          Web Dev Resources
+        </div>
+
+        <div class="card-body resources">
+
+          <ul>
+            <li><a href="#">Dev.to Community</a></li>
+            <li><a href="#">Smashing Magazine</a></li>
+            <li><a href="#">CSS Tricks</a></li>
+            <li><a href="#">W3 Schools</a></li>
+            <li><a href="#">Udemy</a></li>
+            <li><a href="#">Image Placeholder</a></li>
+          </ul>
+
+        </div>
+
+      </div>
+
+    </section>
+
+    <!-- my footer -->
+    <footer>
+      <p>©2025 @ Adji Assi Yannick @ Côte d'Ivoire</p>
+      <p>Last Modification: 11/05/2026</p>
+    </footer>
+
+  </div>
+
+</body>
+</html>
