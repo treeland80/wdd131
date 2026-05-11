@@ -1,283 +1,125 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="en">
+
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Profil Personnel</title>
+    <!-- META TAGS -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <style>
-    *{
-      margin:0;
-      padding:0;
-      box-sizing:border-box;
-      font-family: Arial, sans-serif;
-    }
+    <!-- SEO -->
+    <meta name="description"
+        content="WDD 131 – Dynamic Web Fundamentals - Assi Yannick Adji - HTML, CSS, JavaScript, Web Development, Côte d'Ivoire Profile Page">
 
-    body{
-      background:#f4f4f4;
-      padding:20px;
-    }
+    <meta name="author" content="Assi Yannick Adji">
 
-    .container{
-      max-width:1100px;
-      margin:auto;
-    }
+    <!-- TITLE -->
+    <title>WDD 131 – Dynamic Web Fundamentals – Assi Yannick Adji</title>
 
-    /* HEADER */
-    header{
-      background:#0d1b4c;
-      color:white;
-      padding:20px;
-      border-radius:10px;
-      text-align:center;
-      margin-bottom:20px;
-    }
+    <!-- GOOGLE FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-    nav{
-      margin-top:15px;
-      display:flex;
-      justify-content:space-around;
-      flex-wrap:wrap;
-    }
+    <link href="https://fonts.googleapis.com/css2?family=Supermercado+One&display=swap" rel="stylesheet">
 
-    nav a{
-      color:white;
-      text-decoration:none;
-      padding:10px 15px;
-      transition:0.3s;
-    }
+    <!-- CSS -->
+    <link rel="stylesheet" href="styles/base.css">
 
-    nav a:hover{
-      background:white;
-      color:#0d1b4c;
-      border-radius:5px;
-    }
+    <!-- JAVASCRIPT -->
+    <script src="scripts/getdates.js" defer></script>
 
-    /* TITRE */
-    .title{
-      text-align:center;
-      margin:25px 0;
-      font-size:40px;
-      color:#222;
-    }
+    <style>
+        body {
+            font-family: 'Supermercado One', sans-serif;
+        }
+    </style>
 
-    /* SECTION PRINCIPALE */
-    .main{
-      display:grid;
-      grid-template-columns:2fr 1fr;
-      gap:20px;
-    }
-
-    .card{
-      background:white;
-      border-radius:10px;
-      overflow:hidden;
-      box-shadow:0 3px 10px rgba(0,0,0,0.1);
-    }
-
-    .card-header{
-      background:#2d4fb3;
-      color:white;
-      padding:15px;
-      font-weight:bold;
-      text-align:center;
-    }
-
-    .card-body{
-      padding:20px;
-    }
-
-    .about{
-      display:flex;
-      gap:20px;
-      align-items:flex-start;
-      flex-wrap:wrap;
-    }
-
-    .about img{
-      width:160px;
-      border-radius:10px;
-    }
-
-    .country{
-      margin-top:30px;
-      border-top:1px solid #ddd;
-      padding-top:20px;
-    }
-
-    .country-content{
-      display:flex;
-      gap:20px;
-      align-items:center;
-      flex-wrap:wrap;
-      margin-top:15px;
-    }
-
-    .flag{
-      width:180px;
-      border:1px solid #ccc;
-    }
-
-    .resources ul{
-      padding-left:20px;
-    }
-
-    .resources li{
-      margin:12px 0;
-    }
-
-    .resources a{
-      color:#2d4fb3;
-      text-decoration:none;
-    }
-
-    .resources a:hover{
-      text-decoration:underline;
-    }
-
-    /* FOOTER */
-    footer{
-      background:#2d4fb3;
-      color:white;
-      text-align:center;
-      padding:20px;
-      margin-top:25px;
-      border-radius:10px;
-    }
-
-    /* RESPONSIVE */
-    @media(max-width:768px){
-      .main{
-        grid-template-columns:1fr;
-      }
-
-      .title{
-        font-size:28px;
-      }
-
-      nav{
-        flex-direction:column;
-        gap:10px;
-      }
-    }
-
-  </style>
 </head>
 
 <body>
 
-  <div class="container">
-
     <!-- HEADER -->
     <header>
-      <h2>WDD 131: Dynamic Web Fundamentals</h2>
 
-      <nav>
-        <a href="#">LinkedIn</a>
-        <a href="#">I-Learn</a>
-        <a href="#">Scripture</a>
-        <a href="#">Final Project</a>
-      </nav>
+        <span id="course-title">
+            WDD 131 – Dynamic Web Fundamentals
+        </span>
+
+        <nav>
+            <a href="https://www.linkedin.com/" target="_blank">LinkedIn</a>
+
+            <a href="https://byupw.instructure.com/" target="_blank">Canvas</a>
+
+            <a href="#" target="_blank">Côte d'Ivoire Study</a>
+
+            <a href="#">Final Project</a>
+        </nav>
+
     </header>
 
-    <!-- TITRE -->
-    <h1 class="title">Rubia M. Francesco</h1>
+    <!-- MAIN -->
+    <main>
 
-    <!-- CONTENU -->
-    <section class="main">
+        <h1>Assi Yannick Adji</h1>
 
-      <!-- ABOUT -->
-      <div class="card">
+        <!-- CARD 1 -->
+        <section class="card">
 
-        <div class="card-header">
-          About Me
-        </div>
+            <h2>About Me</h2>
 
-        <div class="card-body">
+            <div class="card-content">
 
-          <div class="about">
+                <div class="text">
+                    <p>
+                        My name is Assi Yannick Adji and I am from Côte d'Ivoire.
+                        I am a beginner in web development, passionate about technology,
+                        entrepreneurship, and building real-world projects.
+                    </p>
 
-            <div>
-              <p>
-                My name is Rubia and I go by Ruby.
-                I was born in South Africa and live
-                with my family in Madagascar.
-                I am currently working as administrative
-                legal assistant at a law firm.
-              </p>
+                    <p>
+                        I am currently learning HTML, CSS, JavaScript, and working
+                        step by step to become a full web and mobile developer.
+                    </p>
+                </div>
 
-              <br>
-
-              <p>
-                My children are my world and I love
-                spending time with them.
-                I love to travel and learn new things.
-              </p>
-            </div>
-
-            <!-- PHOTO -->
-            <img src="photo.jpg" alt="Photo profil">
-
-          </div>
-
-          <!-- COUNTRY -->
-          <div class="country">
-
-            <h2>Toloria, Madagascar</h2>
-
-            <div class="country-content">
-
-              <!-- DRAPEAU -->
-              <img
-                class="flag"
-                src="https://upload.wikimedia.org/wikipedia/commons/b/bc/Flag_of_Madagascar.svg"
-                alt="Drapeau Madagascar"
-              >
-
-              <p>
-                Madagascar is the 4th largest island in the world
-                and is located in the Indian Ocean.
-                It is home to 5% of the world's plant and animal species.
-              </p>
+                <img src="images/profile.jpg" alt="Assi Yannick Adji profile photo">
 
             </div>
 
-          </div>
+        </section>
 
-        </div>
-      </div>
+        <!-- CARD 2 -->
+        <section class="card">
 
-      <!-- RESSOURCES -->
-      <div class="card">
+            <h2>Côte d'Ivoire</h2>
 
-        <div class="card-header">
-          Web Dev Resources
-        </div>
+            <div class="country">
 
-        <div class="card-body resources">
+                <img src="images/cote-divoire.jpg" alt="Côte d'Ivoire landscape">
 
-          <ul>
-            <li><a href="#">Dev.to Community</a></li>
-            <li><a href="#">Smashing Magazine</a></li>
-            <li><a href="#">CSS Tricks</a></li>
-            <li><a href="#">W3 Schools</a></li>
-            <li><a href="#">Udemy</a></li>
-            <li><a href="#">Image Placeholder</a></li>
-          </ul>
+                <p>
+                    Côte d'Ivoire is a West African country known for its cocoa production,
+                    vibrant culture, strong entrepreneurship spirit, and growing technology scene.
+                    I am proud to build my skills while representing my country in tech.
+                </p>
 
-        </div>
+            </div>
 
-      </div>
+        </section>
 
-    </section>
+    </main>
 
-    <!-- my footer -->
+    <!-- FOOTER -->
     <footer>
-      <p>©2025 @ Adji Assi Yannick @ Côte d'Ivoire</p>
-      <p>Last Modification: 11/05/2026</p>
+
+        <p>
+            © <span id="currentyear"></span>
+            🌸 Assi Yannick Adji 🌸 Côte d'Ivoire
+        </p>
+
+        <p id="lastModified"></p>
+
     </footer>
 
-  </div>
-
 </body>
+
 </html>
