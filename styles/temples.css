@@ -1,0 +1,112 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    background-color: #e3f2fd; /* Mobile background */
+    color: #222;
+}
+
+
+
+header{
+    background: #1e3a5f;
+    color: white;
+    padding: 1rem;
+}
+
+.header-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+#menu-btn{
+    font-size: 1.5rem;
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+
+
+
+nav{
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    margin-top: 1rem;
+}
+
+nav.show{
+    display: flex;
+}
+
+nav a{
+    color: white;
+    text-decoration: none;
+    padding: 0.8rem;
+    transition: 0.3s;
+}
+
+nav a:hover{
+    background: white;
+    color: #1e3a5f;
+    border-radius: 5px;
+}
+
+
+
+main{
+    max-width: 1200px;
+    margin: auto;
+    padding: 1rem;
+}
+
+main h2{
+    text-align: center;
+    margin-bottom: 2rem;
+    color: blue; /* Mobile h2 color */
+}
+
+
+
+.gallery{
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+}
+
+figure{
+    background: white;
+    padding: 1rem;
+    border-radius: 12px;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+}
+
+figure img{
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+figcaption{
+    text-align: center;
+    margin-top: 0.8rem;
+    font-weight: 600;
+}
+
+
+footer{
+    background: #1e3a5f;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    margin-top: 2rem;
+}

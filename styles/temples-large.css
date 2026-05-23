@@ -1,0 +1,52 @@
+/* temples-large.css */
+
+/* tablet screen */
+@media screen and (min-width: 768px){
+
+    body{
+        background-color: #e8f5e9;
+    }
+
+    h2{
+        color: green;
+    }
+
+    #menu-btn{
+        display: none;
+    }
+
+    nav{
+        display: flex !important;
+        flex-direction: row;
+        width: auto;
+        gap: 1rem;
+        margin-top: 0;
+    }
+
+    .gallery{
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+
+
+/* computer screen */
+@media screen and (min-width: 1024px){
+
+    body{
+        background-color: #eeeeee;
+    }
+
+    h2{
+        color: gray;
+    }
+
+    .gallery{
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    main{
+        max-width: 1200px;
+    }
+
+}
