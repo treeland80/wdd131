@@ -19,7 +19,7 @@
     <link rel="stylesheet" href="styles/temples.css">
     <link rel="stylesheet" href="styles/temples-large.css">
 
-    <script src="scripts/temples.js" defer></script>
+    <script src="scripts/filtered-temples.js" defer></script>
 </head>
 
 <body>
@@ -32,11 +32,11 @@
             <button id="menu-btn" aria-label="Open navigation menu">☰</button>
 
             <nav id="nav-menu">
-                <a href="#">Home</a>
-                <a href="#">Old</a>
-                <a href="#">New</a>
-                <a href="#">Large</a>
-                <a href="#">Small</a>
+                <a href="#" id="home">Home</a>
+                <a href="#" id="old">Old</a>
+                <a href="#" id="new">New</a>
+                <a href="#" id="large">Large</a>
+                <a href="#" id="small">Small</a>
             </nav>
 
         </div>
@@ -44,10 +44,9 @@
 
     <main>
 
-        <h2>Beautiful Temples Around The World</h2>
+        <h1>Temple Album</h1>
 
         <section class="gallery">
-
             <figure>
                 <img src="images/salt-lake-temple.webp" alt="Salt Lake Temple glowing during summer evening" loading="lazy">
                 <figcaption>Salt Lake Temple</figcaption>
