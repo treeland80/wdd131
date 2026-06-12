@@ -89,3 +89,8 @@ footer {
         padding: 1rem;
     }
 }
+@media (min-width: 601px) {
+    form {
+        padding: 2rem;
+    }
+}
