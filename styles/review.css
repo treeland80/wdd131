@@ -23,8 +23,8 @@ body {
 header {
     background: var(--primary);
     color: white;
-    padding: 1rem;
     text-align: center;
+    padding: 1rem;
     border-radius: 10px 10px 0 0;
 }
 
@@ -54,7 +54,6 @@ textarea {
     padding: .8rem;
     border: 1px solid var(--border);
     border-radius: 6px;
-    font-size: 1rem;
 }
 
 textarea {
@@ -68,30 +67,12 @@ fieldset {
     border-radius: 6px;
 }
 
-legend {
-    padding: 0 .5rem;
-    font-weight: bold;
-}
-
-.stars {
-    display: flex;
-    gap: 15px;
-    font-size: 1.5rem;
-}
-
-.features {
-    display: grid;
-    gap: .5rem;
-}
-
 input[type="submit"] {
     background: var(--primary);
     color: white;
     border: none;
     margin-top: 1.5rem;
-    font-weight: bold;
     cursor: pointer;
-    transition: .3s;
 }
 
 input[type="submit"]:hover {
@@ -101,15 +82,10 @@ input[type="submit"]:hover {
 footer {
     text-align: center;
     margin-top: 20px;
-    color: #6b7280;
 }
 
-@media screen and (max-width: 600px) {
+@media (max-width: 600px) {
     form {
         padding: 1rem;
-    }
-
-    .stars {
-        flex-wrap: wrap;
     }
 }

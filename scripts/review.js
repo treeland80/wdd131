@@ -1,7 +1,16 @@
-let count = Number(localStorage.getItem("reviewCount")) || 0;
+const products = [
+    { id: "fc-1888", name: "Flux Capacitor" },
+    { id: "fc-2050", name: "Power Laces" },
+    { id: "fs-1987", name: "Time Circuits" },
+    { id: "ac-2000", name: "Low Voltage Reactor" },
+    { id: "jj-1969", name: "Warp Equalizer" }
+];
 
-count++;
+const select = document.querySelector("#product");
 
-localStorage.setItem("reviewCount", count);
-
-document.getElementById("reviewCount").textContent = count;
+products.forEach(product => {
+    const option = document.createElement("option");
+    option.value = product.id;
+    option.textContent = product.name;
+    select.appendChild(option);
+});
