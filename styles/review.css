@@ -102,3 +102,17 @@ footer {
     color: black;
 }
 }
+
+input[type="radio"] {
+  display: none;
+}
+
+fieldset label {
+  font-size: 25px;
+  color: lightgray;
+  cursor: pointer;
+}
+
+input[type="radio"]:checked + label {
+  color: gold;
+}
